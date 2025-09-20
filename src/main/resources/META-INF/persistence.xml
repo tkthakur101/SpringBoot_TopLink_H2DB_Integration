@@ -13,7 +13,7 @@
       <property name="javax.persistence.jdbc.user" value="sa"/>
       <property name="javax.persistence.jdbc.password" value=""/>
 
-      <property name="toplink.ddl-generation" value="create-tables"/>
+      <property name="toplink.ddl-generation" value="none"/>
       <property name="toplink.logging.level" value="FINE"/>
     </properties>
   </persistence-unit>

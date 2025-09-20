@@ -35,12 +35,11 @@ public class TopLinkConfig {
 
         Properties props = new Properties();
         props.put("eclipselink.logging.level", "FINE");
-        props.put("eclipselink.ddl-generation", "create-tables");
+        props.put("eclipselink.ddl-generation", "none");
         props.put("eclipselink.target-database", "org.eclipse.persistence.platform.database.H2Platform");
         props.put("eclipselink.weaving", "false");
         emf.setJpaProperties(props);
 
-        // Remove setLoadTimeWeaver and its parameter
         return emf;
     }
 
